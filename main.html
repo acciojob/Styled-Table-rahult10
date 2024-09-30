@@ -2,14 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 60%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #e0f7fa;
+        }
+        th {
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+    <table>
+        <caption>COVID-19 Vaccination Statistics (2023)</caption>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Vaccination Rate (%)</th>
+                <th>Total Vaccinated (Million)</th>
+                <th>Booster Dose (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>75</td>
+                <td>250</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>70</td>
+                <td>950</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td>85</td>
+                <td>70</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>65</td>
+                <td>150</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
